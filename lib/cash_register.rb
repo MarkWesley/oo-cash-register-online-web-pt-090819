@@ -28,9 +28,9 @@ class CashRegister
     @items
   end
 
-  def void_last_transaction(price, quantity=1)
-    @last_trans = item * price * quantity
-    @total = @total - @last_trans
+  def void_last_transaction
+    @last_trans = @items * @price
+    @total -= @last_trans
   end
 
 end
