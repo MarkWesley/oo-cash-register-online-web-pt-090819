@@ -13,7 +13,7 @@ class CashRegister
       @items << title
       quantity -= 1
     end
-    @last_trans = @total
+    # @last_trans = @total
   end
 
   def apply_discount
@@ -29,7 +29,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total -= @last_trans
+    @total -= @price
   end
 
 end
